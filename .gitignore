@@ -1,0 +1,14 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Local Source Media (Raw originals; optimized assets are in /assets)
+content/
+
+# Local server & logs
+*.log
+.vscode/
+.idea/
