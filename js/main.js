@@ -129,11 +129,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightboxPrevBtn) lightboxPrevBtn.classList.add('hidden');
     if (lightboxNextBtn) lightboxNextBtn.classList.add('hidden');
 
+    // Pause any background coverflow videos while viewing fullscreen
+    document.querySelectorAll('#video-coverflow-track video').forEach(v => {
+      if (!v.paused) v.pause();
+    });
+
     lightboxVideo.classList.remove('hidden');
+    lightboxVideo.playsInline = true;
+    lightboxVideo.setAttribute('webkit-playsinline', 'true');
+    lightboxVideo.preload = 'auto';
     lightboxVideo.src = src;
+    lightboxVideo.load();
     lightboxVideo.currentTime = 0;
     lightboxVideo.muted = false;
-    lightboxVideo.play().catch(() => {});
+
+    const playPromise = lightboxVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // If mobile browser blocks unmuted playback, fallback to muted play
+        lightboxVideo.muted = true;
+        lightboxVideo.play().catch(() => {});
+      });
+    }
 
     if (lightboxTitle) lightboxTitle.textContent = title || 'Featured AI Video';
     if (lightboxCategory) lightboxCategory.textContent = cat || 'AI VIDEO PRODUCTION';
@@ -155,7 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lightboxModal) return;
     if (lightboxVideo) {
       lightboxVideo.pause();
-      lightboxVideo.src = '';
+      lightboxVideo.removeAttribute('src');
+      lightboxVideo.load(); // Releases video decoder memory immediately
       lightboxVideo.classList.add('hidden');
     }
     if (lightboxImg) {

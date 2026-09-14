@@ -1,4 +1,4 @@
-﻿// Optimized Lightweight Starfield & Constellation Engine (Zero Scroll Lag)
+// Optimized Lightweight Starfield & Constellation Engine (Zero Scroll Lag)
 (function() {
   const canvas = document.getElementById('cosmos-canvas');
   if (!canvas) return;
@@ -25,15 +25,16 @@
     targetMouseY = (e.clientY - height / 2) * 0.03;
   }, { passive: true });
 
-  // 1. Efficient Stars (Reduced to 90 for 60fps on laptop battery)
-  const STAR_COUNT = 90;
+  // 1. Efficient Stars (Dynamically scaled for mobile vs desktop)
+  const isMobile = window.innerWidth < 768;
+  const STAR_COUNT = isMobile ? 25 : 80;
   const stars = [];
   for (let i = 0; i < STAR_COUNT; i++) {
     stars.push({
       x: Math.random() * width,
       y: Math.random() * height,
-      size: Math.random() * 1.4 + 0.5,
-      alpha: Math.random() * 0.6 + 0.2,
+      size: Math.random() * 1.2 + 0.4,
+      alpha: Math.random() * 0.5 + 0.2,
       speed: Math.random() * 0.015 + 0.005,
       phase: Math.random() * Math.PI * 2
     });

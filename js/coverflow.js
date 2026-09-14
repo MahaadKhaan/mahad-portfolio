@@ -38,17 +38,35 @@ function initCoverflow({
     });
   }
 
+  // Smart IntersectionObserver: Only decode/play videos when the video section is actually on screen
+  let isViewportVisible = false;
+  if (isVideo && 'IntersectionObserver' in window && viewport) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        isViewportVisible = entry.isIntersecting;
+        updateVideoPlayback();
+      });
+    }, { threshold: 0.15 });
+    observer.observe(viewport);
+  } else {
+    isViewportVisible = true;
+  }
+
   function updateVideoPlayback() {
     if (!isVideo) return;
     cards.forEach((card) => {
       const vid = card.querySelector('video');
       if (!vid) return;
       const state = card.getAttribute('data-state');
-      if (state === 'active') {
-        vid.play().catch(() => {});
+      if (state === 'active' && isViewportVisible) {
+        vid.preload = 'auto';
+        if (vid.paused) {
+          vid.play().catch(() => {});
+        }
       } else {
-        vid.pause();
-        vid.currentTime = 0;
+        if (!vid.paused) {
+          vid.pause();
+        }
       }
     });
   }
