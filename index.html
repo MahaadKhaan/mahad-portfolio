@@ -32,7 +32,7 @@
   <div id="custom-cursor">
     <div class="cursor-dot"></div>
     <div class="cursor-pill">
-      <span class="cursor-pill-text font-mono text-[11px] tracking-wider uppercase">View</span>
+      <span class="cursor-pill-text font-mono text-xs tracking-wider uppercase">View</span>
       <span class="cursor-pill-icon text-xs">↗</span>
     </div>
   </div>
@@ -52,7 +52,7 @@
         </svg>
         <span id="preloader-brand-text" class="font-display font-extrabold text-2xl tracking-[6px] uppercase">MAHAD</span>
       </div>
-      <div class="font-mono text-[10px] text-zinc-500 tracking-widest mt-4 uppercase opacity-60">
+      <div class="font-mono text-xs text-zinc-500 tracking-widest mt-4 uppercase opacity-60">
         AI COUTURE ENGINE // READY
       </div>
     </div>
@@ -73,8 +73,9 @@
 
     <!-- Center Lead Capture Pill -->
     <div id="header-center-pill" class="pointer-events-auto opacity-0 hidden md:block">
-      <form id="email-lead-form" class="glass-pill rounded-full pl-4 pr-1.5 py-1.5 flex items-center gap-3">
-        <div class="text-zinc-400">
+      <form id="email-lead-form" class="glass-pill rounded-full pl-4 pr-1.5 py-1 flex items-center gap-3 h-10">
+        <label for="email-lead-input" class="sr-only">Your email address</label>
+        <div class="text-zinc-400 flex items-center" aria-hidden="true">
           <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"/>
             <polyline points="12 6 12 12 16 14"/>
@@ -84,12 +85,12 @@
           id="email-lead-input" 
           type="email" 
           placeholder="Got an idea for an AI shoot? Send your e-mail" 
-          class="bg-transparent text-xs text-white placeholder-zinc-400 focus:outline-none w-64 lg:w-80 font-normal"
+          class="bg-transparent text-xs text-white placeholder-zinc-400 focus:outline-none w-64 lg:w-80 font-normal h-8 leading-8"
           required
         >
         <button 
           type="submit" 
-          class="bg-white text-black hover:bg-zinc-200 text-xs font-semibold px-4 py-1.5 rounded-full transition-all duration-200 shadow-sm"
+          class="bg-white text-black hover:bg-zinc-200 text-xs font-semibold px-4 h-8 rounded-full transition-all duration-200 shadow-sm inline-flex items-center justify-center shrink-0 cursor-pointer"
           data-cursor-text="Submit"
         >
           Send
@@ -148,18 +149,18 @@
 
       <!-- Central Typography & Narrative -->
       <div id="hero-center-content" class="text-center z-20 px-4 max-w-xl lg:max-w-2xl pointer-events-none relative my-auto">
-        <div class="hero-coords font-mono text-[10px] md:text-[11px] text-zinc-400 tracking-[4px] mb-3 opacity-0 uppercase">
+        <div class="hero-coords font-mono text-xs text-zinc-400 tracking-[3px] mb-3 opacity-0 uppercase">
           PORTFOLIO // AI VISUAL ARCHITECT
         </div>
 
         <div class="split-line-wrap">
-          <h1 class="hero-title-line font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] uppercase tracking-[-0.03em] text-white leading-none translate-y-full opacity-0">
+          <h1 class="hero-title-line font-display font-black text-5xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-[-0.03em] text-white leading-none translate-y-full opacity-0">
             MAHAD
           </h1>
         </div>
         <div class="split-line-wrap">
-          <h2 class="hero-title-line font-display font-light text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] uppercase tracking-tight text-zinc-300 translate-y-full opacity-0 mt-1 md:mt-2 leading-none">
-            AI PHOTOS &amp; VIDEOS
+          <h2 class="hero-title-line font-display font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight text-zinc-300 translate-y-full opacity-0 mt-1 md:mt-2 leading-none">
+            AI Photos &amp; Videos
           </h2>
         </div>
 
@@ -209,7 +210,7 @@
 
           </div>
 
-          <div class="mt-3 flex items-center justify-center gap-1.5 font-mono text-[9px] text-zinc-500 uppercase tracking-widest">
+          <div class="mt-3 flex items-center justify-center gap-1.5 font-mono text-xs text-zinc-500 uppercase tracking-widest">
             <span>Tap any photo to view in 2K</span>
             <span class="text-xs">↗</span>
           </div>
@@ -266,13 +267,13 @@
         
         <!-- Left: Polaroid Card Frame -->
         <div class="lg:col-span-5 flex justify-center lg:justify-start">
-          <div class="polaroid-frame w-72 md:w-84 lg:w-92 rounded-md rotate-[-2.5deg] text-black shadow-2xl">
-            <div class="w-full aspect-[4/5] overflow-hidden bg-zinc-950 rounded border border-zinc-800 relative">
+          <div class="polaroid-frame w-72 md:w-84 lg:w-92 rounded-2xl rotate-[-2.5deg] text-black shadow-2xl">
+            <div class="w-full aspect-[4/5] overflow-hidden bg-zinc-950 rounded-xl border border-zinc-800 relative">
               <img src="assets/optimized/profile.webp" alt="Mahad Khan" class="w-full h-full object-cover object-center">
             </div>
             <div class="mt-4 flex flex-col font-display font-bold uppercase tracking-tight">
               <span class="text-lg md:text-xl text-zinc-950">MAHAD KHAN</span>
-              <span class="font-mono text-[10px] text-zinc-500 tracking-wider">AI PHOTO &amp; VIDEO CREATOR</span>
+              <span class="font-mono text-xs text-zinc-600 tracking-wider">AI Photo &amp; Video Creator</span>
             </div>
           </div>
         </div>
@@ -301,12 +302,12 @@
             Traditional photoshoots take weeks of planning, expensive studio rentals, and model bookings. I help clothing brands produce hyper-realistic AI photos and cinematic video reels in days. From royal bridal wear and delicate jewelry to everyday pret wear and social media ads, every piece is designed to look authentic, sharp, and premium.
           </p>
 
-          <div class="mt-8 flex items-center gap-6">
-            <a href="#section-bridal-coverflow" data-scroll-to="#section-bridal-coverflow" class="font-mono text-xs text-zinc-300 hover:text-white flex items-center gap-2 transition-colors uppercase tracking-wider">
-              <span>EXPLORE BRIDAL PHOTOS</span>
-              <span>↓</span>
+          <div class="mt-10 pt-2 flex flex-wrap items-center gap-5">
+            <a href="#section-bridal-coverflow" data-scroll-to="#section-bridal-coverflow" class="glass-pill border border-white/15 px-5 py-2.5 rounded-full font-mono text-xs text-zinc-200 hover:text-white hover:bg-white/10 flex items-center gap-2.5 transition-all tracking-wide">
+              <span>Explore Bridal Photos</span>
+              <span aria-hidden="true">↓</span>
             </a>
-            <span class="font-mono text-[10px] text-zinc-500 tracking-widest">REALISTIC AI ATELIER</span>
+            <span class="font-mono text-xs text-zinc-400 tracking-wider">Realistic AI Atelier</span>
           </div>
         </div>
 
@@ -321,7 +322,7 @@
       
       <!-- Section Header -->
       <div class="max-w-4xl mx-auto text-center mb-8 relative z-20">
-        <div class="font-mono text-[10px] text-zinc-400 tracking-[3px] uppercase mb-2">
+        <div class="font-mono text-xs text-zinc-400 tracking-[3px] uppercase mb-2">
           PORTFOLIO // BRIDAL WEAR
         </div>
         <h2 class="font-display font-extrabold text-3xl md:text-5xl uppercase tracking-tight text-white">
@@ -352,12 +353,12 @@
           <div class="coverflow-card" data-index="0" data-state="active">
             <img src="assets/optimized/Bridal_fashion_portrait_photography_2K_20260914112106.webp" alt="The Crimson Heirloom">
             <!-- Portfolio tag top right -->
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               AI COUTURE // 2K
             </div>
             <!-- Bottom details overlay -->
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL COUTURE</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL COUTURE</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">The Crimson Heirloom</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -371,11 +372,11 @@
           <!-- Card 2: Palace Farshi Lehenga -->
           <div class="coverflow-card" data-index="1" data-state="next-1">
             <img src="assets/optimized/Bride_posing_in_palace_interior_2K_20260914112158.webp" alt="Ivory Palace Farshi">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               ROYAL PALACE // 2K
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">ARCHITECTURAL HERITAGE</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">ARCHITECTURAL HERITAGE</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Ivory Palace Farshi</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -389,11 +390,11 @@
           <!-- Card 3: Amber Velvet Ensemble -->
           <div class="coverflow-card" data-index="2" data-state="next-2">
             <img src="assets/optimized/Bride_seated_in_warm_interior_2K_20260914112059.webp" alt="Amber Velvet Ensemble">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               ZARDOZI TEXTURE
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">VELVET LIGHTING STUDY</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">VELVET LIGHTING STUDY</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Amber Velvet Ensemble</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -407,11 +408,11 @@
           <!-- Card 4: Houseboat Pishwas -->
           <div class="coverflow-card" data-index="3" data-state="hidden">
             <img src="assets/optimized/Bride_seated_in_wooden_houseboat_2K_20260914112204.webp" alt="Houseboat Pishwas">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               KASHMIR ARCHIVE
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">EDITORIAL NARRATIVE</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">EDITORIAL NARRATIVE</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Houseboat Royal Pishwas</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -425,11 +426,11 @@
           <!-- Card 5: Heera Bridal -->
           <div class="coverflow-card" data-index="4" data-state="hidden">
             <img src="assets/optimized/Bride_posing_for_portrait_2K_20260914112126.webp" alt="Classic Heera Bridal">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               JEWELRY DETAIL
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">BESPOKE LIGHTING</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">BESPOKE LIGHTING</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Classic Heera Bridal</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -443,11 +444,11 @@
           <!-- Card 6: Emerald Gota Kinari -->
           <div class="coverflow-card" data-index="5" data-state="hidden">
             <img src="assets/optimized/Bride_seated_on_sofa_2K_20260914112216.webp" alt="Emerald Gota Kinari">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               EMERALD COUTURE
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">HANDCRAFTED MOTIF AI</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">HANDCRAFTED MOTIF AI</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Emerald Gota Kinari</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -461,11 +462,11 @@
           <!-- Card 7: Maharani Bridal Gharara -->
           <div class="coverflow-card" data-index="6" data-state="hidden">
             <img src="assets/optimized/Bride_posing_in_palace_interior_2K_20260914112231.webp" alt="Maharani Bridal Gharara">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               ROYAL SOVEREIGN
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">COURT FASHION EDITORIAL</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">COURT FASHION EDITORIAL</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Maharani Bridal Gharara</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -479,11 +480,11 @@
           <!-- Card 8: Smiling Bridal Portrait -->
           <div class="coverflow-card" data-index="7" data-state="prev-2">
             <img src="assets/optimized/Bride_sitting_smiling_for_portrait_2K_20260914121626.webp" alt="Shehnai Saree">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               HEIRLOOM SERIES
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">TRADITIONAL WEDDING</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">TRADITIONAL WEDDING</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Heritage Shehnai Saree</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -497,11 +498,11 @@
           <!-- Card 9: Blush Tissue Lehenga -->
           <div class="coverflow-card" data-index="8" data-state="prev-1">
             <img src="assets/optimized/Bride_seated_posing_for_portrait_2K_20260914112128.webp" alt="Blush Pink Tissue Lehenga">
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               BLUSH SILK &amp; TISSUE
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">DIFFUSED STUDIO LIGHTING</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">DIFFUSED STUDIO LIGHTING</span>
               <h3 class="garment-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Blush Tissue Lehenga</h3>
               <div class="mt-3">
                 <button class="view-render-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="View">
@@ -528,7 +529,7 @@
           <span>Browse All Bridal Photos (14 Photos)</span>
           <span class="text-sm leading-none">↗</span>
         </button>
-        <span class="font-mono text-[10px] text-zinc-400 tracking-widest uppercase">
+        <span class="font-mono text-xs text-zinc-400 tracking-widest uppercase">
           14 HIGH QUALITY BRIDAL &amp; PRET PHOTOS
         </span>
       </div>
@@ -570,62 +571,62 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-end relative z-10">
         
         <!-- Card 1: Luxury Bridal Couture -->
-        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between"
+        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between rounded-2xl"
              data-cursor-text="View"
              data-album-img="assets/optimized/Bridal_fashion_portrait_photography_2K_20260914112106.webp"
              data-album-title="The Crimson Heirloom"
              data-album-cat="Pakistani Bridal Couture">
-          <div class="w-full h-[85%] overflow-hidden rounded">
-            <img src="assets/optimized/Bridal_fashion_portrait_photography_2K_20260914112106.webp" alt="Bridal Wear">
+          <div class="w-full h-[85%] overflow-hidden rounded-xl bg-zinc-950">
+            <img src="assets/optimized/Bridal_fashion_portrait_photography_2K_20260914112106.webp" class="w-full h-full object-cover" alt="Bridal Wear">
           </div>
           <div class="mt-2 flex items-center justify-between">
             <span class="font-display text-xs font-semibold uppercase tracking-wider text-white">BRIDAL WEAR</span>
-            <span class="glass-pill text-[10px] px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">full shoot ⤤</span>
+            <span class="glass-pill text-xs px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">full shoot ⤤</span>
           </div>
         </div>
 
         <!-- Card 2: Casual & Pret Apparel -->
-        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between lg:translate-y-8"
+        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between lg:translate-y-8 rounded-2xl"
              data-cursor-text="View"
              data-album-img="assets/optimized/Woman_adjusting_earring_in_garden_2K_20260914121105.webp"
              data-album-title="Garden Elegance"
              data-album-cat="Apparel Shoot">
-          <div class="w-full h-[85%] overflow-hidden rounded">
-            <img src="assets/optimized/Woman_adjusting_earring_in_garden_2K_20260914121105.webp" alt="Casual & Pret Apparel">
+          <div class="w-full h-[85%] overflow-hidden rounded-xl bg-zinc-950">
+            <img src="assets/optimized/Woman_adjusting_earring_in_garden_2K_20260914121105.webp" class="w-full h-full object-cover" alt="Casual & Pret Apparel">
           </div>
           <div class="mt-2 flex items-center justify-between">
             <span class="font-display text-xs font-semibold uppercase tracking-wider text-white">CASUAL &amp; PRET</span>
-            <span class="glass-pill text-[10px] px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">lookbook ⤤</span>
+            <span class="glass-pill text-xs px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">lookbook ⤤</span>
           </div>
         </div>
 
         <!-- Card 3: AI Product Commercials (Perfume & Luxury Goods) -->
-        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between"
+        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between rounded-2xl"
              data-cursor-text="View"
              data-album-img="assets/optimized/perfume_product_shoot.webp"
              data-album-title="Luxury Perfume Film"
              data-album-cat="Commercial Shoot">
-          <div class="w-full h-[85%] overflow-hidden rounded bg-black">
+          <div class="w-full h-[85%] overflow-hidden rounded-xl bg-zinc-950">
             <img src="assets/optimized/perfume_product_shoot.webp" class="w-full h-full object-cover" alt="Product Shoots">
           </div>
           <div class="mt-2 flex items-center justify-between">
             <span class="font-display text-xs font-semibold uppercase tracking-wider text-white">PRODUCT SHOOTS</span>
-            <span class="glass-pill text-[10px] px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">commercial ⤤</span>
+            <span class="glass-pill text-xs px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">commercial ⤤</span>
           </div>
         </div>
 
         <!-- Card 4: Viral AI UGC Video Ads -->
-        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between lg:translate-y-8"
+        <div class="project-card aspect-[9/16] p-3 flex flex-col justify-between lg:translate-y-8 rounded-2xl"
              data-cursor-text="View"
              data-album-img="assets/optimized/ugc_dental_ad.webp"
              data-album-title="Viral UGC Video Ads"
              data-album-cat="Social Media Campaign">
-          <div class="w-full h-[85%] overflow-hidden rounded bg-black">
+          <div class="w-full h-[85%] overflow-hidden rounded-xl bg-zinc-950">
             <img src="assets/optimized/ugc_dental_ad.webp" class="w-full h-full object-cover" alt="Viral AI UGC Ads">
           </div>
           <div class="mt-2 flex items-center justify-between">
             <span class="font-display text-xs font-semibold uppercase tracking-wider text-white">AI UGC ADS</span>
-            <span class="glass-pill text-[10px] px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">video ad ⤤</span>
+            <span class="glass-pill text-xs px-2.5 py-0.5 rounded-full text-zinc-300 font-mono">video ad ⤤</span>
           </div>
         </div>
 
@@ -640,7 +641,7 @@
       
       <!-- Section Header -->
       <div class="max-w-4xl mx-auto text-center mb-8 relative z-20">
-        <div class="font-mono text-[10px] text-zinc-400 tracking-[3px] uppercase mb-2">
+        <div class="font-mono text-xs text-zinc-400 tracking-[3px] uppercase mb-2">
           PORTFOLIO // AI VIDEOS &amp; REELS
         </div>
         <h2 class="font-display font-extrabold text-3xl md:text-5xl uppercase tracking-tight text-white">
@@ -670,11 +671,11 @@
           <!-- Card 1: Royal Bridal Reel -->
           <div class="coverflow-card" data-index="0" data-state="active" data-video-src="assets/videos/bridal_video.mp4" data-video-title="Royal Bridal Reel" data-video-cat="Pakistani Bridal Couture">
             <video src="assets/videos/bridal_video.mp4" poster="assets/videos/posters/bridal_video.webp" playsinline webkit-playsinline loop muted preload="metadata" class="w-full h-full object-cover"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               BRIDAL REEL // 9:16
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL COUTURE</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL COUTURE</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Royal Bridal Reel</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5 cursor-pointer" data-cursor-text="Watch">
@@ -682,7 +683,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors cursor-pointer" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -691,11 +692,11 @@
           <!-- Card 2: Luxury Perfume Commercial (16:9 Never Crop!) -->
           <div class="coverflow-card" data-index="1" data-state="next-1" data-video-src="assets/videos/perfume.mp4" data-video-title="Luxury Perfume Commercial" data-video-cat="Product Commercial">
             <video src="assets/videos/perfume.mp4" poster="assets/videos/posters/perfume.webp" playsinline webkit-playsinline loop muted preload="none" class="w-full h-full object-contain bg-black"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               COMMERCIAL // 16:9
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">PRODUCT COMMERCIAL</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">PRODUCT COMMERCIAL</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Luxury Perfume Commercial</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5 cursor-pointer" data-cursor-text="Watch">
@@ -703,7 +704,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors cursor-pointer" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -712,11 +713,11 @@
           <!-- Card 3: Dental Clinic UGC Ad -->
           <div class="coverflow-card" data-index="2" data-state="next-2" data-video-src="assets/videos/dentist.mp4" data-video-title="Dental Clinic UGC Ad" data-video-cat="Healthcare &amp; UGC">
             <video src="assets/videos/dentist.mp4" poster="assets/videos/posters/dentist.webp" playsinline webkit-playsinline loop muted preload="none" class="w-full h-full object-cover"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               HEALTHCARE // 9:16
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">VIRAL HEALTHCARE UGC</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">VIRAL HEALTHCARE UGC</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Dental Clinic UGC Ad</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5 cursor-pointer" data-cursor-text="Watch">
@@ -724,7 +725,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors cursor-pointer" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -733,11 +734,11 @@
           <!-- Card 4: Modern Villa Tour -->
           <div class="coverflow-card" data-index="3" data-state="hidden" data-video-src="assets/videos/realestate.mp4" data-video-title="Modern Villa Tour" data-video-cat="Real Estate Showcase">
             <video src="assets/videos/realestate.mp4" poster="assets/videos/posters/realestate.webp" playsinline webkit-playsinline loop muted preload="none" class="w-full h-full object-cover"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               REAL ESTATE // 9:16
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">PROPERTY &amp; INTERIOR</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">PROPERTY &amp; INTERIOR</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Modern Villa Tour</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5 cursor-pointer" data-cursor-text="Watch">
@@ -745,7 +746,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors cursor-pointer" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -754,11 +755,11 @@
           <!-- Card 5: Viral Lifestyle Fashion UGC -->
           <div class="coverflow-card" data-index="4" data-state="prev-2" data-video-src="assets/videos/ugc.mp4" data-video-title="Viral Fashion UGC" data-video-cat="Social Media Campaign">
             <video src="assets/videos/ugc.mp4" poster="assets/videos/posters/ugc.webp" playsinline webkit-playsinline loop muted preload="none" class="w-full h-full object-cover"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               FASHION UGC // 9:16
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">VIRAL SOCIAL REEL</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">VIRAL SOCIAL REEL</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Viral Fashion UGC</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5 cursor-pointer" data-cursor-text="Watch">
@@ -766,7 +767,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors cursor-pointer" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -775,11 +776,11 @@
           <!-- Card 6: Creator Brand UGC Video -->
           <div class="coverflow-card" data-index="5" data-state="prev-1" data-video-src="assets/videos/ugc2.mp4" data-video-title="Creator Brand UGC" data-video-cat="Brand Campaign">
             <video src="assets/videos/ugc2.mp4" poster="assets/videos/posters/ugc2.webp" playsinline webkit-playsinline loop muted preload="none" class="w-full h-full object-cover"></video>
-            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold text-white tracking-wider">
+            <div class="absolute top-4 right-4 z-20 glass-pill px-3.5 py-1 rounded-full text-xs font-mono font-semibold text-white tracking-wider">
               BRAND AD // 9:16
             </div>
             <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 pt-16 flex flex-col justify-end">
-              <span class="font-mono text-[10px] tracking-widest text-zinc-400 uppercase font-semibold">HIGH-CONVERTING UGC</span>
+              <span class="font-mono text-xs tracking-widest text-zinc-400 uppercase font-semibold">HIGH-CONVERTING UGC</span>
               <h3 class="video-card-title font-display font-bold text-lg md:text-xl text-white mt-0.5">Creator Brand UGC</h3>
               <div class="mt-3 flex items-center gap-2">
                 <button class="watch-full-video-btn glass-pill px-4 py-1.5 rounded-full text-xs font-medium text-white hover:bg-white hover:text-black transition-colors flex items-center gap-1.5" data-cursor-text="Watch">
@@ -787,7 +788,7 @@
                   <span class="text-sm leading-none">↗</span>
                 </button>
                 <button class="card-sound-toggle-btn glass-pill px-3 py-1.5 rounded-full text-xs text-white hover:bg-white/20 transition-colors" data-cursor-text="Sound">
-                  <span class="sound-icon-text font-mono text-[10px]">🔇 Sound</span>
+                  <span class="sound-icon-text font-mono text-xs">🔇 Sound</span>
                 </button>
               </div>
             </div>
@@ -802,7 +803,7 @@
 
       <!-- Video Section Status Note -->
       <div class="mt-6 text-center relative z-20">
-        <span class="font-mono text-[10px] text-zinc-400 tracking-widest uppercase">
+        <span class="font-mono text-xs text-zinc-400 tracking-widest uppercase">
           6 HIGH DEFINITION AI FILMS • SWEEP &amp; AUTOPLAY • CLICK SOUND FOR AUDIO
         </span>
       </div>
@@ -826,16 +827,16 @@
         <!-- Status Pill Badge (Cleanly spaced below fixed header) -->
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-white/15 mb-6 shadow-lg">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="font-mono text-[9px] sm:text-[10px] text-zinc-300 tracking-[2px] uppercase font-semibold">AVAILABLE FOR NEW PROJECTS WORLDWIDE</span>
+          <span class="font-mono text-xs sm:text-xs text-zinc-300 tracking-[2px] uppercase font-semibold">AVAILABLE FOR NEW PROJECTS WORLDWIDE</span>
         </div>
 
         <div class="split-line-wrap w-full">
-          <h2 class="cta-headline-line font-display font-extrabold text-[26px] xs:text-[30px] sm:text-5xl md:text-6xl lg:text-7xl uppercase tracking-tight text-white leading-tight">
+          <h2 class="cta-headline-line font-display font-extrabold text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl uppercase tracking-tight text-white leading-tight">
             LET'S CREATE SOMETHING
           </h2>
         </div>
         <div class="split-line-wrap w-full">
-          <h2 class="cta-headline-line font-display font-extrabold text-[26px] xs:text-[30px] sm:text-5xl md:text-6xl lg:text-7xl uppercase tracking-tight text-white/90 mt-1 sm:mt-2 leading-tight">
+          <h2 class="cta-headline-line font-display font-extrabold text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl uppercase tracking-tight text-white/90 mt-1 sm:mt-2 leading-tight">
             GREAT FOR YOUR BRAND.
           </h2>
         </div>
@@ -868,7 +869,7 @@
       </div>
 
       <!-- Footer Bottom Bar -->
-      <div class="relative z-10 w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between border-t border-white/10 pt-6 mt-8 font-mono text-[11px] text-zinc-400 gap-3 text-center sm:text-left">
+      <div class="relative z-10 w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between border-t border-white/10 pt-6 mt-8 font-mono text-xs text-zinc-400 gap-3 text-center sm:text-left">
         <div>All rights reserved &copy; 2026 MAHAD KHAN</div>
         <div class="flex items-center gap-6 justify-center">
           <a href="https://www.instagram.com/mahad_khan05/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Instagram</a>
@@ -941,7 +942,7 @@
   <div id="all-photos-archive-modal" class="fixed inset-0 bg-[#08080a]/95 backdrop-blur-2xl z-[9998] hidden flex-col overflow-y-auto p-4 sm:p-8 md:p-12">
     <div class="max-w-7xl w-full mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-6 mb-8 sticky top-0 bg-[#08080a]/95 backdrop-blur-md z-30 pt-2">
       <div>
-        <div class="font-mono text-[10px] text-zinc-400 tracking-[3px] uppercase">MAHAD ATELIER ARCHIVE</div>
+        <div class="font-mono text-xs text-zinc-400 tracking-[3px] uppercase">MAHAD ATELIER ARCHIVE</div>
         <h3 class="font-display font-bold text-2xl md:text-3xl uppercase text-white tracking-tight">ALL 14 AI PHOTOGRAPHY WORKS</h3>
       </div>
       
@@ -976,7 +977,7 @@
            data-album-cat="Pakistani Bridal Couture">
         <img src="assets/optimized/Bridal_fashion_portrait_photography_2K_20260914112106.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="The Crimson Heirloom" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">PAKISTANI BRIDAL</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">The Crimson Heirloom</h4>
         </div>
       </div>
@@ -989,7 +990,7 @@
            data-album-cat="Architectural Heritage">
         <img src="assets/optimized/Bride_posing_in_palace_interior_2K_20260914112158.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Ivory Palace Farshi" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">PALACE ARCHITECTURE</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">PALACE ARCHITECTURE</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Ivory Palace Farshi</h4>
         </div>
       </div>
@@ -1002,7 +1003,7 @@
            data-album-cat="Velvet Lighting Study">
         <img src="assets/optimized/Bride_seated_in_warm_interior_2K_20260914112059.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Amber Velvet Ensemble" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">VELVET TEXTURE</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">VELVET TEXTURE</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Amber Velvet Ensemble</h4>
         </div>
       </div>
@@ -1015,7 +1016,7 @@
            data-album-cat="Kashmir Bridal Narrative">
         <img src="assets/optimized/Bride_seated_in_wooden_houseboat_2K_20260914112204.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Houseboat Royal Pishwas" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">KASHMIR ARCHIVE</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">KASHMIR ARCHIVE</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Houseboat Royal Pishwas</h4>
         </div>
       </div>
@@ -1028,7 +1029,7 @@
            data-album-cat="Bespoke Lighting">
         <img src="assets/optimized/Bride_posing_for_portrait_2K_20260914112126.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Classic Heera Bridal" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">FINE JEWELRY</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">FINE JEWELRY</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Classic Heera Bridal</h4>
         </div>
       </div>
@@ -1041,7 +1042,7 @@
            data-album-cat="Handcrafted Motif AI">
         <img src="assets/optimized/Bride_seated_on_sofa_2K_20260914112216.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Emerald Gota Kinari" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">EMERALD ATELIER</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">EMERALD ATELIER</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Emerald Gota Kinari</h4>
         </div>
       </div>
@@ -1054,7 +1055,7 @@
            data-album-cat="Court Fashion Editorial">
         <img src="assets/optimized/Bride_posing_in_palace_interior_2K_20260914112231.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Maharani Bridal Gharara" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">ROYAL COURT</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">ROYAL COURT</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Maharani Bridal Gharara</h4>
         </div>
       </div>
@@ -1067,7 +1068,7 @@
            data-album-cat="Traditional Wedding">
         <img src="assets/optimized/Bride_sitting_smiling_for_portrait_2K_20260914121626.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Heritage Shehnai Saree" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">HEIRLOOM TRADITION</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">HEIRLOOM TRADITION</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Heritage Shehnai Saree</h4>
         </div>
       </div>
@@ -1080,7 +1081,7 @@
            data-album-cat="Diffused Studio Lighting">
         <img src="assets/optimized/Bride_seated_posing_for_portrait_2K_20260914112128.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Blush Tissue Lehenga" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">SILK &amp; TISSUE</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">SILK &amp; TISSUE</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Blush Tissue Lehenga</h4>
         </div>
       </div>
@@ -1093,7 +1094,7 @@
            data-album-cat="High-Jewelry Macro AI">
         <img src="assets/optimized/Bride_seated_posing_for_portrait_2K_20260914112124.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Royal Kundan & Zari Detail" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">MACRO JEWELRY</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">MACRO JEWELRY</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Royal Kundan &amp; Zari Detail</h4>
         </div>
       </div>
@@ -1106,7 +1107,7 @@
            data-album-cat="Modern Casual Apparel">
         <img src="assets/optimized/Woman_adjusting_earring_in_garden_2K_20260914121105.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Garden Elegance Pret" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">SUMMER LOOKBOOK</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">SUMMER LOOKBOOK</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Garden Elegance Pret</h4>
         </div>
       </div>
@@ -1119,7 +1120,7 @@
            data-album-cat="Fashion Brand Lookbook">
         <img src="assets/optimized/Woman_adjusting_earring_outdoors_2K_20260914121053.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Urban Streetwear Pret" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">STREETWEAR PRET</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">STREETWEAR PRET</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Urban Streetwear Pret</h4>
         </div>
       </div>
@@ -1132,7 +1133,7 @@
            data-album-cat="Commercial Apparel Campaign">
         <img src="assets/optimized/Woman_posing_outdoor_portrait_2K_20260914121058.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Outdoor Sunlit Fashion" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">COMMERCIAL APPAREL</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">COMMERCIAL APPAREL</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Outdoor Sunlit Fashion</h4>
         </div>
       </div>
@@ -1145,7 +1146,7 @@
            data-album-cat="Virtual Fashion Silhouette">
         <img src="assets/optimized/image.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Editorial AI Concept" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4">
-          <span class="font-mono text-[9px] tracking-wider text-zinc-400 uppercase font-semibold">AI SILHOUETTE</span>
+          <span class="font-mono text-xs tracking-wider text-zinc-400 uppercase font-semibold">AI SILHOUETTE</span>
           <h4 class="font-display text-sm font-bold text-white mt-0.5">Editorial AI Concept</h4>
         </div>
       </div>
@@ -1192,8 +1193,8 @@
       ›
     </button>
     <div class="lightbox-content max-w-5xl max-h-[88vh] flex flex-col items-center select-none">
-      <img id="lightbox-img" src="" class="max-h-[72vh] w-auto object-contain rounded shadow-2xl transition-all duration-300" alt="Preview">
-      <video id="lightbox-video" src="" controls playsinline class="max-h-[72vh] max-w-[90vw] object-contain rounded shadow-2xl hidden"></video>
+      <img id="lightbox-img" src="" class="max-h-[72vh] w-auto object-contain rounded-xl shadow-2xl transition-all duration-300" alt="Preview">
+      <video id="lightbox-video" src="" controls playsinline class="max-h-[72vh] max-w-[90vw] object-contain rounded-xl shadow-2xl hidden"></video>
       <div class="mt-4 text-center">
         <h5 id="lightbox-title" class="font-display font-bold text-lg uppercase text-white"></h5>
         <span id="lightbox-category" class="font-mono text-xs text-zinc-400 tracking-wider"></span>
