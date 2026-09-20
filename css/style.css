@@ -44,17 +44,18 @@ html, body {
 
 /* Glassmorphic Pills */
 .glass-pill {
-  background: rgba(20, 20, 24, 0.75);
+  background-color: #0c0d12;
+  background: rgba(16, 17, 22, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 20px -1px rgba(0, 0, 0, 0.5);
   transition: all 0.25s ease-out;
 }
 
 .glass-pill:hover, .glass-pill:focus-within {
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 255, 255, 0.08);
 }
 
 /* Hero Floating Constellation Cards (Exact Match to User Reference) */
@@ -216,6 +217,7 @@ html, body {
   height: 520px;
   border-radius: 1rem; /* Standardized rounded-2xl (16px) */
   overflow: hidden;
+  background-color: #060608;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.12);
   transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
               filter 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
