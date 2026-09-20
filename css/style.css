@@ -58,11 +58,17 @@ html, body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 255, 255, 0.08);
 }
 
+/* Hero Center Content Stacking Priority */
+#hero-center-content {
+  position: relative;
+  z-index: 40 !important;
+}
+
 /* Hero Floating Constellation Cards (Exact Match to User Reference) */
 .hero-card {
   position: absolute;
   overflow: hidden;
-  z-index: 10;
+  z-index: 10 !important;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.92), 0 0 0 1px rgba(255, 255, 255, 0.12);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
   will-change: transform;
@@ -89,7 +95,7 @@ html, body {
 }
 
 .hero-card:hover {
-  z-index: 45 !important;
+  z-index: 50 !important;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.98), 0 0 30px rgba(212, 175, 55, 0.2), 0 0 0 1.5px rgba(255, 255, 255, 0.35);
   transform: translateY(-8px) scale(1.03);
 }
